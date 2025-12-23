@@ -1,0 +1,79 @@
+TRAINING LOG – WEB DEVELOPMENT SESSION
+Date: 23-12-2025
+
+Overview:
+Today’s training focused on building a complete Flask-based web application with
+user authentication pages and a stylish AI Quote Generator frontend.
+
+Tasks Completed:
+
+1. Registration Page
+- Created registration.html
+- Fields included: username, email, password
+- Implemented clean HTML structure
+- Later enhanced with modern styling, gradients, and card-based UI
+- Added redirect behavior to move to index page after clicking Register
+
+2. Login Page
+- Created login.html
+- Fields included: email and password
+- Connected login flow to redirect to index page after submission
+- Styled to match overall website theme
+
+3. Entrance / Home Page (Before Login)
+- Created home.html as the public landing page
+- Added Login and Register navigation
+- Integrated AI quote display (quote + author)
+- Styled with glassmorphism and gradient background
+
+4. Dashboard / Index Page (After Login)
+- index.html set as post-login landing page
+- Displays AI Quote Generator
+- Shows dynamically generated quote from API
+- Includes “Generate New Quote” button
+
+5. Flask Backend Integration
+- Used Flask framework
+- Integrated API Ninjas Quotes API
+- Used environment variables (.env) for API key
+- Implemented routes for:
+  - Home page (/)
+  - Login page
+  - Registration page
+  - Index/dashboard page
+- Used render_template for HTML rendering
+
+6. Static Files Integration
+- Added static folder structure
+- Created separate CSS file for styling
+- Created JavaScript file for animations and interactions
+- Properly loaded static files using Flask url_for
+
+7. Styling & UI Enhancements
+- Applied modern gradients and glassmorphism effects
+- Added hover effects and animations
+- Implemented animated gradient background
+- Improved typography and spacing
+- Added subtle JavaScript interactions
+
+8. JavaScript Enhancements
+- Card hover scaling animation
+- Optional animated background particles
+- Improved user experience without changing backend logic
+
+Outcome:
+By the end of the session, a complete multi-page Flask web application was built
+with:
+- Public landing page
+- Login and registration pages
+- Protected dashboard page
+- AI-powered quote generator
+- Modern, professional UI
+- Clean project structure ready for future extensions
+
+Next Possible Steps:
+- Add real authentication and sessions
+- Store users in a database
+- Protect routes based on login status
+- Add AJAX-based quote refresh
+- Implement user profiles or saved quotes
