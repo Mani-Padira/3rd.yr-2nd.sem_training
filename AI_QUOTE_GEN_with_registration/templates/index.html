@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Quote Generator</title>
+
+    <!-- Correct way to load static files in Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>🤖 AI Quote Generator</h1>
+
+        <p class="quote">
+            “{{ quote }}”
+        </p>
+
+        <p class="author">
+            — {{ author }}
+        </p>
+
+        <form method="get">
+            <button type="submit">✨ Generate New Quote</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
