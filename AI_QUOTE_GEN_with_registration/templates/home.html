@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 380px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+.buttons a {
+    display: block;
+    margin: 15px 0;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.login {
+    background: #00e676;
+    color: #222;
+}
+.register {
+    background: #ffca28;
+    color: #222;
+}
+.buttons a:hover {
+    transform: scale(1.05);
+}
+.quote {
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Welcome ✨</h1>
+    <p>Your journey starts here</p>
+
+    <div class="buttons">
+        <a href="{{url_for('login')}}" class="login">Login</a>
+        <a href="{{url_for('registration')}}" class="register">Register</a>
+    </div>
+
+    
+</div>
+
+</body>
+</html>
